@@ -16,9 +16,9 @@ const page = () => {
       <div className="bg-white mt-16">
         <Image src={img} width="100%" alt="board" />
       </div>
-      <div className="flex max-sm:flex max-sm:flex-col">
-        <div className="flex flex-col p-10 gap-7 w-1/2 max-sm:w-full">
-          <div className="text-gray-900 font-bold text-4xl max-sm:text-3xl">
+      <div className="flex max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col">
+        <div className="flex flex-col p-10 gap-7 w-1/2 max-sm:w-full max-md:w-full">
+          <div className="text-gray-900 font-bold text-4xl max-sm:text-3xl max-md:text-3xl">
             What is BrainSproutGames?
           </div>
           <div className="text-gray-900 font-semibold text-xl">
@@ -32,7 +32,7 @@ const page = () => {
             neque aspernatur!
           </div>
         </div>
-        <div className="w-1/2 p-10 flex justify-center max-sm:w-full">
+        <div className="w-1/2 p-10 flex justify-center max-sm:w-full max-md:w-full">
           <Image className="rounded-2xl" src={img2} width={400} alt="game" />
         </div>
       </div>
@@ -51,7 +51,9 @@ const page = () => {
                   <h3 className="text-xs tracking-widest title-font mb-1">
                     CATEGORY
                   </h3>
-                  <h2 className="title-font text-lg font-medium">The Catalyzer</h2>
+                  <h2 className="title-font text-lg font-medium">
+                    The Catalyzer
+                  </h2>
                   <p className="mt-1">$16.00</p>
                 </div>
               </div>
@@ -63,7 +65,9 @@ const page = () => {
                   <h3 className="text-xs tracking-widest title-font mb-1">
                     CATEGORY
                   </h3>
-                  <h2 className="title-font text-lg font-medium">Shooting Stars</h2>
+                  <h2 className="title-font text-lg font-medium">
+                    Shooting Stars
+                  </h2>
                   <p className="mt-1">$21.15</p>
                 </div>
               </div>
@@ -87,15 +91,35 @@ const page = () => {
         <div className="w-1/2 flex items-center flex-col justify-center border-r-2 border-gray-900 max-sm:border-none">
           <div className="font-bold text-3xl max-sm:text-2xl">Follow Us!</div>
           <div className="flex gap-8 py-10 max-sm:gap-10 max-sm:py-4">
-            <Image className="max-sm:h-14 max-sm:w-auto" src={ig} width={70} alt="ig"></Image>
-            <Image className="max-sm:h-14 max-sm:w-auto" src={fb} width={70} alt="fb"></Image>
+            <Image
+              className="max-sm:h-14 max-sm:w-auto"
+              src={ig}
+              width={70}
+              alt="ig"
+            ></Image>
+            <Image
+              className="max-sm:h-14 max-sm:w-auto"
+              src={fb}
+              width={70}
+              alt="fb"
+            ></Image>
           </div>
         </div>
         <div className="w-1/2 flex items-center flex-col justify-center border-l-2 border-gray-900  max-sm:border-none">
           <div className="font-bold text-3xl max-sm:text-2xl">Contact Us!</div>
           <div className="flex gap-8 py-10 max-sm:gap-10 max-sm:py-4">
-            <Image className="max-sm:w-auto max-sm:h-12" src={mail} width={90} alt="mail"></Image>
-            <Image className="max-sm:h-14 max-sm:w-auto" src={wp} width={70} alt="wp"></Image>
+            <Image
+              className="max-sm:w-auto max-sm:h-12"
+              src={mail}
+              width={90}
+              alt="mail"
+            ></Image>
+            <Image
+              className="max-sm:h-14 max-sm:w-auto"
+              src={wp}
+              width={70}
+              alt="wp"
+            ></Image>
           </div>
         </div>
       </div>
