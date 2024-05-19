@@ -25,26 +25,23 @@ const Nav = () => {
             <li>Contact Us</li>
           </ul>
         </div>
-        {menu ? (
-          <div
-            className="lg:hidden flex text-4xl text-white items-center cursor-pointer fixed right-5 top-6 z-50"
-            onClick={() => setmenu(!menu)}
-          >
-            <IoMdCloseCircle></IoMdCloseCircle>
-          </div>
-        ) : (
-          <div
-            className="text-3xl cursor-pointer text-blue-400 md:hidden lg:hidden"
-            onClick={() => setmenu(!menu)}
-          >
-            <RiMenuUnfold4Fill></RiMenuUnfold4Fill>
-          </div>
-        )}
+        <div
+          className="text-3xl cursor-pointer text-blue-400 md:hidden lg:hidden"
+          onClick={() => setmenu(!menu)}
+        >
+          <RiMenuUnfold4Fill></RiMenuUnfold4Fill>
+        </div>
         <div
           className={`lg:hidden top-0 right-0 w-1/2 bg-gray-900 text-white p-6 fixed h-full z-40 ease-in-out duration-300
           ${menu ? "translate-x-0 " : "translate-x-full"}`}
         >
           <ul className="flex flex-col gap-4 w-full">
+            <li
+              className="self-end text-3xl cursor-pointer"
+              onClick={() => setmenu(!menu)}
+            >
+              <IoMdCloseCircle></IoMdCloseCircle>
+            </li>
             <li>Home</li>
             <li>Games</li>
             <li>Our Story</li>
